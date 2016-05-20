@@ -35,12 +35,21 @@ var chart = d3.select('.chart')
 d3.json('malhun.json', function(error, data) {
     if (error) return console.warn(error);
 
-    filledIn = []
+
+    // scale all durations and offsets to 100
+    data.map(function(m) {
+        var pieceLength = m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset;
+        m.notes.map(function(n) {
+        n.offset = n.offset / pieceLength * 100;
+        n.duration = n.duration / pieceLength * 100;
+        })
+    })
+
     shortestDuration = d3.min(data, function(d) {
         return (d3.min(d.notes, function(d) { return d.duration }))
     })
-
-
+    filledIn = []
+    var xAxisLength = 100;
     data.map(function(m) {
         var melody = {};
         melody.metadata = m.metadata;
@@ -62,6 +71,8 @@ d3.json('malhun.json', function(error, data) {
             lastNote.frequency = m.notes[i].frequency;
             lastNote.fromRoot = m.notes[i].fromRoot;
         }
+
+
 
         m.notes.map(function(n, i) {
             // skip initial rests
@@ -138,7 +149,7 @@ d3.json('malhun.json', function(error, data) {
         .attr('y', -6)
         .attr('dx', '.71em')
         .style('text-anchor', 'end')
-        .text('Beats')
+        .text('Time (%)')
 
     chart.append('g')
         .attr('class', 'axis axis--y')
@@ -181,7 +192,6 @@ d3.json('malhun.json', function(error, data) {
         .attr('startOffset', function(d) {
             var numRefrains = d3.max(data, function (d) { return Number(d.metadata.refrain) });
             var refrain = (Number(d.metadata.refrain) - 1) * 1.0
-            console.log(String(refrain / numRefrains * 100.0) + '%')
             return String(refrain / numRefrains * 100.0) + '%';
         })
         .attr('xlink:href', function(d, i) { return '#path-' + i; })
