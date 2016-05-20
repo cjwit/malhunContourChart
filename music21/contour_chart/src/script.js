@@ -35,15 +35,22 @@ var chart = d3.select('.chart')
 d3.json('malhun.json', function(error, data) {
     if (error) return console.warn(error);
 
-
-    // scale all durations and offsets to 100
+    // set up colors and normalize durations
+    var colorDomains = []
     data.map(function(m) {
+        var domain = m.metadata.title + ': ' + m.metadata.artist;
+        if (colorDomains.indexOf(domain) === -1) { colorDomains.push(domain) }
+
         var pieceLength = m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset;
         m.notes.map(function(n) {
         n.offset = n.offset / pieceLength * 100;
         n.duration = n.duration / pieceLength * 100;
         })
     })
+
+    // finish color setup
+    var color = d3.scale.category10()
+        .domain(colorDomains);
 
     shortestDuration = d3.min(data, function(d) {
         return (d3.min(d.notes, function(d) { return d.duration }))
@@ -128,6 +135,7 @@ d3.json('malhun.json', function(error, data) {
         filledIn.push(melody)
     })
     data = filledIn
+
     x.domain([0, (d3.max(data, function(d) {
         return (d3.max(d.notes, function(d) { return d.offset }))
     }))]);
@@ -183,6 +191,7 @@ d3.json('malhun.json', function(error, data) {
             return line(values);
         })
         .attr('id', function(d, i) { return 'path-' + i; })
+        .style('stroke', function(d) { return color(d.metadata.title + ": " + d.metadata.artist) })
         // color
 
     melody.append('text')
