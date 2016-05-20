@@ -32,14 +32,70 @@ var chart = d3.select('.chart')
     .attr('class', 'container')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-d3.json('malhun.json', function(error, data) {
-    if (error) return console.warn(error);
+// buttons
+var titleArtist = [];
+var selected = [];
+var setListeners = function() {
+    $('.selector').click(function(e) {
+        e.preventDefault();
+        var title = e.target.id;
+        var index = selected.indexOf(title)
+        if (index === -1) {
+            selected.push(title);
+        } else {
+            selected.splice(index, 1)
+        }
 
+        if (selected.length === 0) {
+            $('.melody').each(function(index) {
+                $(this).css('opacity', '');
+            })
+        } else {
+            $('.melody').each(function(index) {
+                var melodyID = $(this).attr('id').replace(':', ': ');
+                if (selected.indexOf(melodyID) !== -1) {
+                    $(this).css('opacity', '.9')
+                } else {
+                    $(this).css ('opacity', '.1')}
+            });
+        }
+    });
+}
+
+var createButtons = function() {
+    var buttons = $('#buttons');
+    buttons.addClass('btn-group');
+    buttons.attr('data-toggle', 'buttons');
+    titleArtist.map(function(title, index) {
+        var label = $('<label></label>')
+            .addClass('btn btn-default')
+            .attr('id', title)
+            .addClass('selector');
+        var button = $('<input/>')
+            .attr('type', 'checkbox')
+            .attr('autocomplete', 'off');
+        label.append(button).append(title);
+        buttons.append(label);
+    });
+    setListeners();
+}
+
+var filterData = function(data) {
+    data = data.filter(function(melody) {
+        if (selected.length === 0) {
+            return true
+        }
+        melodyID = melody.metadata.title + ": " + melody.metadata.artist;
+        return selected.indexOf(melodyID) !== -1;
+    })
+    return data
+}
+
+var formatData = function(data) {
     // set up colors and normalize durations
-    var colorDomains = []
     data.map(function(m) {
         var domain = m.metadata.title + ': ' + m.metadata.artist;
-        if (colorDomains.indexOf(domain) === -1) { colorDomains.push(domain) }
+        if (titleArtist.indexOf(domain) === -1) { titleArtist.push(domain) }
 
         var pieceLength = m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset;
         m.notes.map(function(n) {
@@ -50,7 +106,7 @@ d3.json('malhun.json', function(error, data) {
 
     // finish color setup
     var color = d3.scale.category10()
-        .domain(colorDomains);
+        .domain(titleArtist);
 
     shortestDuration = d3.min(data, function(d) {
         return (d3.min(d.notes, function(d) { return d.duration }))
@@ -78,8 +134,6 @@ d3.json('malhun.json', function(error, data) {
             lastNote.frequency = m.notes[i].frequency;
             lastNote.fromRoot = m.notes[i].fromRoot;
         }
-
-
 
         m.notes.map(function(n, i) {
             // skip initial rests
@@ -134,12 +188,17 @@ d3.json('malhun.json', function(error, data) {
         })
         filledIn.push(melody)
     })
-    data = filledIn
+    return filledIn;
+}
 
+d3.json('malhun.json', function(error, data) {
+    if (error) return console.warn(error);
+
+    // build chart
+    data = formatData(data);
     x.domain([0, (d3.max(data, function(d) {
         return (d3.max(d.notes, function(d) { return d.offset }))
     }))]);
-
     y.domain([
         d3.min(data, function(d) {
             return (d3.min(d.notes, function(d) { return d.frequency }))
@@ -148,6 +207,7 @@ d3.json('malhun.json', function(error, data) {
         })
     ]);
 
+    // add axes, title
     chart.append('g')
         .attr('class', 'axis axis--x')
         .attr('transform', 'translate(0,' + height + ')')
@@ -177,22 +237,25 @@ d3.json('malhun.json', function(error, data) {
         .style('text-anchor', 'middle')
         .text('Contours of Some Malhun Melodies');
 
+    // visualize data
     var melody = chart.selectAll('.melody')
         .data(data)
       .enter().append('g')
         .attr('class', 'melody')
+        .attr('id', function(d) {
+            return d.metadata.title + ":" + d.metadata.artist;
+        })
 
     melody.append('path')
         .attr('class', 'line')
         .attr('d', function(d) {
             var values = d.notes.map(function(note, index) {
                 return { offset: note.offset, frequency: note.frequency }
-            })
+            });
             return line(values);
         })
         .attr('id', function(d, i) { return 'path-' + i; })
         .style('stroke', function(d) { return color(d.metadata.title + ": " + d.metadata.artist) })
-        // color
 
     melody.append('text')
         .attr('dy', -5)
@@ -205,4 +268,6 @@ d3.json('malhun.json', function(error, data) {
         })
         .attr('xlink:href', function(d, i) { return '#path-' + i; })
         .text(function(d) { return d.metadata.title + ' (' + d.metadata.artist + '), harba ' + d.metadata.refrain; })
+
+    createButtons();
 })
