@@ -592,5 +592,641 @@
             "refrain": "4",
             "fileName": "Damlij-Toulali?-4.xml"
         }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 0.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 8,
+                "frequency": 622.253967444162,
+                "offset": 2
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 2.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 3
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 3.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 4
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 4.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 7
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 7.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 349.2282314330038,
+                "offset": 7.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 8
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 349.2282314330038,
+                "offset": 8.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 349.2282314330038,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 10
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 10.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 11
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 11.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.3333333333333333,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 12
+            },
+            {
+                "duration": 0.3333333333333333,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 12.333333333333334
+            },
+            {
+                "duration": 0.3333333333333333,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 12.666666666666666
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 13
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 13.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 14
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 14.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 15
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 15.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 15.75
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 16
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 1,
+                "frequency": 415.3046975799451,
+                "offset": 17.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 18
+            },
+            {
+                "duration": 1,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 19
+            }
+        ],
+        "root": 391.99543598174927,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Damlij",
+            "artist": "Toulali?",
+            "refrain": "6",
+            "fileName": "Damlij-Toulali?-6.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 0.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 1
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 2
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 2.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 7
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 7.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 8
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 10
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 10.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 12
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 12.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 13
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 13.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 13.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 14
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 14.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 15.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 16
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 16.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 17
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 17.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 18
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 18.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 19
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 19.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 19.5
+            }
+        ],
+        "root": 349.2282314330038,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Damlij",
+            "artist": "Toulali?",
+            "refrain": "8",
+            "fileName": "Damlij-Toulali?-8.xml"
+        }
     }
 ]

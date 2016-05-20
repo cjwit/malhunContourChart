@@ -21,7 +21,7 @@ var yAxis = d3.svg.axis()
     .orient('left')
 
 var line = d3.svg.line()
-    .interpolate('basis')
+    .interpolate('linear')
     .x(function(d) { return x(d.offset); })
     .y(function(d) { return y(d.frequency); })
 
@@ -31,17 +31,6 @@ var chart = d3.select('.chart')
   .append('g')
     .attr('class', 'container')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-
-// info box
-/*
-var div = d3.select('body')
-    .append('div')
-    .attr('class', 'info')
-    .style('opacity', 0)
-    .style('left', 600 + 'px')
-    .style('top', (height / 2 + 100) + 'px')
-    .style('width', 300 + 'px')
-*/
 
 d3.json('malhun.json', function(error, data) {
     if (error) return console.warn(error);
@@ -127,9 +116,7 @@ d3.json('malhun.json', function(error, data) {
         })
         filledIn.push(melody)
     })
-    console.log(data[0].notes.length)
     data = filledIn
-    console.log(data[0].notes.length)
     x.domain([0, (d3.max(data, function(d) {
         return (d3.max(d.notes, function(d) { return d.offset }))
     }))]);
@@ -188,10 +175,15 @@ d3.json('malhun.json', function(error, data) {
         // color
 
     melody.append('text')
-        .attr('x', function(d) { return 40; })
         .attr('dy', -5)
       .append('textPath')
         .attr('class', 'textpath')
+        .attr('startOffset', function(d) {
+            var numRefrains = d3.max(data, function (d) { return Number(d.metadata.refrain) });
+            var refrain = (Number(d.metadata.refrain) - 1) * 1.0
+            console.log(String(refrain / numRefrains * 100.0) + '%')
+            return String(refrain / numRefrains * 100.0) + '%';
+        })
         .attr('xlink:href', function(d, i) { return '#path-' + i; })
-        .text(function(d) { return d.metadata.title + ' ' + d.metadata.refrain; })
+        .text(function(d) { return d.metadata.title + ' (' + d.metadata.artist + '), harba ' + d.metadata.refrain; })
 })

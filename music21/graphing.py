@@ -58,3 +58,4 @@ from music21 import *
 from json import dumps
 data = getData(getMalhun())
 jsonData = dumps(data)
+print jsonData
