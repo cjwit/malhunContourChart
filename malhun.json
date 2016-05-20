@@ -1225,8 +1225,2186 @@
             "isFinal": 0,
             "title": "Damlij",
             "artist": "Toulali?",
+            "refrain": "7",
+            "fileName": "Damlij-Toulali?-7.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 1.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 0
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 2
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 7
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 8
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 10
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 12.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 13
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 13.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 14
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 16
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 9,
+                "frequency": 587.3295358348153,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 17
+            },
+            {
+                "duration": 1,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 17.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 19.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 20
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 21
+            },
+            {
+                "duration": 1,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 21.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 22.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 23
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 23.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 24
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 24.5
+            }
+        ],
+        "root": 349.2282314330038,
+        "metadata": {
+            "isFinal": 1,
+            "title": "Damlij",
+            "artist": "Toulali?",
             "refrain": "8",
-            "fileName": "Damlij-Toulali?-8.xml"
+            "fileName": "Damlij-Toulali?-8-Final.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 0.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 1
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 1.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 2
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 3
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 3.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 7
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 8
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 10
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 9,
+                "frequency": 659.2551138257401,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 12.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 13
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 14
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 14.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -1,
+                "frequency": 369.99442271163434,
+                "offset": 14.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -5,
+                "frequency": 293.66476791740746,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 16
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 18
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 19
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 19.5
+            }
+        ],
+        "root": 391.99543598174927,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Fatma",
+            "artist": "Aloudi",
+            "refrain": "1",
+            "fileName": "Fatma-Aloudi-1.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 0.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 2
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 4
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 4.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 6
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 6.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 7
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 7.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 8
+            },
+            {
+                "duration": 1,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 10
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 12.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 13
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 13.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 14
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 18
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 19
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 19.5
+            }
+        ],
+        "root": 391.99543598174927,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Fatma",
+            "artist": "Aloudi",
+            "refrain": "4",
+            "fileName": "Fatma-Aloudi-4.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 0.75
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 1
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 2
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 6
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 8
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 8.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 9
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 10
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 12.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 13
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 16
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -3,
+                "frequency": 440,
+                "offset": 18
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 19.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 20
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 20.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 21
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 21.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 22
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 22.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 23
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 23.5
+            }
+        ],
+        "root": 523.2511306011974,
+        "metadata": {
+            "isFinal": 1,
+            "title": "Fatma",
+            "artist": "Aloudi",
+            "refrain": "8",
+            "fileName": "Fatma-Aloudi-8-Final.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 1.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 2
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 2.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 4.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 7
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 7.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 8
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 10
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 10.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 587.3295358348153,
+                "offset": 12.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 13
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 14
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 14.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 14.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 15
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 15.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 16
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 16.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 523.2511306011974,
+                "offset": 18
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 493.8833012561241,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 440,
+                "offset": 19
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 391.99543598174927,
+                "offset": 19.5
+            }
+        ],
+        "root": 391.99543598174927,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Fatma",
+            "artist": "Asri",
+            "refrain": "1",
+            "fileName": "Fatma-Asri-1.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 1.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 2
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 2.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 2.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 5.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 6.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 6.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 7
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 7.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 8
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -5,
+                "frequency": 391.99543598174927,
+                "offset": 8.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 10
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 10.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 10.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 12.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -4,
+                "frequency": 415.3046975799451,
+                "offset": 13
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -5,
+                "frequency": 391.99543598174927,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -5,
+                "frequency": 391.99543598174927,
+                "offset": 14
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 14.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 14.75
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 15
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 16
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 16.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 17.5
+            }
+        ],
+        "root": 523.2511306011974,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Fatma",
+            "artist": "Asri",
+            "refrain": "5",
+            "fileName": "Fatma-Asri-5.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 1.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 0
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 2.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 3
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 4
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 6
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 8.25
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 10
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 11.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 13
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 13.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 16
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 17.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 587.3295358348153,
+                "offset": 18
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 19
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 20
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 20.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 21
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 22
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -4,
+                "frequency": 415.3046975799451,
+                "offset": 22.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -5,
+                "frequency": 391.99543598174927,
+                "offset": 23
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 23.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 24
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 25
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 25.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 26.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 27
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 28
+            },
+            {
+                "duration": 1,
+                "fromRoot": -2,
+                "frequency": 466.1637615180899,
+                "offset": 28.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 523.2511306011974,
+                "offset": 29.5
+            }
+        ],
+        "root": 523.2511306011974,
+        "metadata": {
+            "isFinal": 1,
+            "title": "Fatma",
+            "artist": "Asri",
+            "refrain": "6",
+            "fileName": "Fatma-Asri-6-Final.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 1
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 2
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 4.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 4.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 5.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 7
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 8
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 10
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 10.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 12.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 13
+            },
+            {
+                "duration": 0,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 14
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 14.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 14.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 15
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 16
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 18
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 19
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 19.5
+            }
+        ],
+        "root": 349.2282314330038,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Fatma",
+            "artist": "Toulali",
+            "refrain": "1",
+            "fileName": "Fatma-Toulali-1.xml"
         }
     }
 ]

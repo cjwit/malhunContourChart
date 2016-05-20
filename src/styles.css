@@ -46,16 +46,18 @@ a {
     shape-rendering: crispEdges; }
 
 .melody {
-  opacity: 0.3; }
+  opacity: 0.1; }
   .melody:hover {
     opacity: 0.9; }
+    .melody:hover path {
+      stroke-width: 7px; }
   .melody text {
     font: bold 12px sans-serif;
     text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; }
   .melody path {
     fill: none;
     stroke: black;
-    stroke-width: 5px;
+    stroke-width: 3px;
     stroke-linejoin: round; }
 
 /*# sourceMappingURL=styles.css.map */
