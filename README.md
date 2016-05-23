@@ -8,5 +8,6 @@ Next up:
     * Start at 30, Ghazel
 * Placement of text labels
     * Could be put into a mouseover tooltip
+* Clean up repetative code
 
 ## Andalusi patterns

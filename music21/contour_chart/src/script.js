@@ -67,7 +67,6 @@ var chart = d3.select('.chart')
     .attr('class', 'container')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-// buttons
 var setListeners = function() {
     $('.selector').click(function(e) {
         e.preventDefault();
@@ -145,7 +144,7 @@ var offsetToPercent = function(data) {
 
 var createFinalPitch = function(m) {
     // find the last non-rest in a melody
-    // create a pitch that extends to the end of the pieceLength
+    // create a pitch that extends to the end of the piece's full duration
     var lastNote = {
         'duration': m.notes[m.notes.length - 1].duration,
         'offset': m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset,
