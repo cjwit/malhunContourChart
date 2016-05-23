@@ -64,13 +64,12 @@ var setListeners = function() {
 
 var createButtons = function() {
     var buttons = $('#buttons');
-    buttons.addClass('btn-group');
+    // buttons.addClass('btn-group');
     buttons.attr('data-toggle', 'buttons');
     titleArtist.map(function(title, index) {
         var label = $('<label></label>')
-            .addClass('btn btn-default')
+            .addClass('btn btn-default btn-sm selector')
             .attr('id', title)
-            .addClass('selector');
         var button = $('<input/>')
             .attr('type', 'checkbox')
             .attr('autocomplete', 'off');
