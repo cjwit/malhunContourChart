@@ -36,7 +36,7 @@ def getNotes(thisScore):
         noteEntry["fromRoot"] = 'rest'
         noteEntry["frequency"] = 'rest'
         if n.isNote:
-            noteEntry["fromRoot"] = interval.Interval(root, n.pitch).chromatic.semitones
+            noteEntry["fromRoot"] = float(interval.Interval(root, n.pitch).chromatic.semitones)
             noteEntry["frequency"] = n.pitch.frequency
         notes.append(noteEntry)
     return notes
