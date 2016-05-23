@@ -26,6 +26,7 @@ var pitchLabels = {
     466: "A#",
     494: "B"
 };
+
 var formatPitch = function(d) {
     if (pitchLabels.hasOwnProperty(d)) {
         return pitchLabels[d];
@@ -37,6 +38,9 @@ var formatPitch = function(d) {
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient('bottom')
+    .tickFormat(function(d) {
+        return d + '%';
+    })
 
 var yAxis = d3.svg.axis()
     .scale(y)
@@ -218,7 +222,7 @@ d3.json('malhun.json', function(error, data) {
         .attr('y', -6)
         .attr('dx', '.71em')
         .style('text-anchor', 'end')
-        .text('Time (%)')
+        .text("Melody's Duration, Normalized to 100%")
 
     chart.append('g')
         .attr('class', 'axis axis--y')
