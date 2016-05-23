@@ -7,10 +7,32 @@ var margin = { top: 20, right: 20, bottom: 30, left: 30},
 var x = d3.scale.linear()
     .range([0, width]);
 
-var y = d3.scale.linear()
+var y = d3.scale.log()
     .range([height, 0]);
 
 var color = d3.scale.category10();
+
+var pitchLabels = {
+    262: "C",
+    277: "C#",
+    294: "D",
+    311: "D#",
+    330: "E",
+    349: "F",
+    370: "F#",
+    392: "G",
+    415: "G#",
+    440: "A",
+    466: "A#",
+    494: "B"
+};
+var formatPitch = function(d) {
+    if (pitchLabels.hasOwnProperty(d)) {
+        return pitchLabels[d];
+    } else if (pitchLabels.hasOwnProperty(d/2)) {
+        return pitchLabels[d/2];
+    }
+}
 
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -19,6 +41,15 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient('left')
+    .tickValues(function() {
+        var keys = Object.keys(pitchLabels);
+        values = [];
+        keys.map(function(pitch) {
+            values.push(pitch, String(pitch * 2));
+        });
+        return values;
+    })
+    .tickFormat(formatPitch)
 
 var line = d3.svg.line()
     .interpolate('basis')
@@ -197,7 +228,7 @@ d3.json('malhun.json', function(error, data) {
         .attr('y', 6)
         .attr('dy', '.71em')
         .style('text-anchor', 'end')
-        .text('Frequency');
+        .text('Pitch');
 
     chart.append('g')
         .attr('class', 'title')
