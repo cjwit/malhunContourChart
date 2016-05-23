@@ -12,7 +12,10 @@
 	<title>Melodic Contours in Malhun</title>
 </head>
 <body>
-	<button id = 'mode' class = 'btn btn-default' onClick = 'chartSteps()'>Display by Step</button>
+	<div id = 'modeSelector' class = 'btn-group'>
+		<button id = 'updateToSteps' class = 'btn btn-default' onClick = 'updateToSteps()'>Steps</button>
+		<button id = 'updateToPitches' class = 'btn btn-default' onClick = 'updateToPitches()'>Pitches</button>
+	</div>
 	<center>
 		<div class = 'container'>
 	    	<svg class='chart'>

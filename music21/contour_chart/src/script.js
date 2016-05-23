@@ -193,13 +193,63 @@ var formatData = function(data) {
     return withEndPoints;
 }
 
-var chartSteps = function() {
+var updateToPitches = function() {
     d3.json('malhun.json', function(error, data) {
         if (error) return console.warn(error);
         data = formatData(data);
         setColors(data);
 
-        console.log('set axis')
+        y = d3.scale.log()
+            .range([height, 0])
+            .domain([
+            d3.min(data, function(d) {
+                return (d3.min(d.notes, function(d) { return d.frequency }))
+            }), d3.max(data, function(d) {
+                return (d3.max(d.notes, function(d) { return d.frequency }))
+            })
+        ]);
+
+        yAxis.scale(y).tickValues(function() {
+            var keys = Object.keys(pitchLabels);
+            values = [];
+            keys.map(function(pitch) {
+                values.push(pitch, String(pitch * 2));
+            });
+            return values;
+        }).tickFormat(formatPitch);
+
+        chart = d3.select('.chart')
+            .transition();
+
+        chart.select('.axis--y')
+            .duration(200)
+            .ease('linear')
+            .call(yAxis);
+
+        chart.select('#yAxis-label')
+            .delay(200)
+            .text('Pitch');
+
+        var melodies = chart.selectAll('.melody');
+        melodies.select('path')
+            .delay(200)
+            .duration(500)
+            .ease('linear')
+            .attr('d', function(d) {
+                var values = d.notes.map(function(note) {
+                    return { x: note.offset, y: note.frequency }
+                });
+                return line(values);
+            });
+    })
+}
+
+var updateToSteps = function() {
+    d3.json('malhun.json', function(error, data) {
+        if (error) return console.warn(error);
+        data = formatData(data);
+        setColors(data);
+
         y = d3.scale.linear()
             .range([height, 0])
             .domain([
@@ -212,14 +262,23 @@ var chartSteps = function() {
 
         yAxis.scale(y).tickValues(null).tickFormat(null);
 
-        chart = d3.select('.chart').transition();
+        chart = d3.select('.chart')
+            .transition();
+
         chart.select('.axis--y')
-            .duration(750)
+            .duration(200)
+            .ease('linear')
             .call(yAxis);
+
+        chart.select('#yAxis-label')
+            .delay(200)
+            .text('Steps above or below root');
 
         var melodies = chart.selectAll('.melody');
         melodies.select('path')
-            .duration(750)
+            .delay(200)
+            .duration(500)
+            .ease('linear')
             .attr('d', function(d) {
                 var values = d.notes.map(function(note) {
                     return { x: note.offset, y: note.fromRoot }
@@ -263,6 +322,7 @@ var chartPitches = function() {
             .attr('class', 'axis axis--y')
             .call(yAxis)
           .append('text')
+            .attr('id', 'yAxis-label')
             .attr('transform', 'rotate(-90)')
             .attr('y', 6)
             .attr('dy', '.71em')
