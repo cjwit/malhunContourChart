@@ -1,16 +1,16 @@
-var data;
-
-var margin = { top: 20, right: 20, bottom: 30, left: 30},
+var data,
+    margin = { top: 20, right: 20, bottom: 30, left: 30},
     width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 500 - margin.top - margin.bottom,
+    color = d3.scale.category10(),
+    titleArtist = [],
+    selected = [];
 
 var x = d3.scale.linear()
     .range([0, width]);
 
 var y = d3.scale.log()
     .range([height, 0]);
-
-var color = d3.scale.category10();
 
 var pitchLabels = {
     262: "C",
@@ -57,8 +57,8 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.line()
     .interpolate('basis')
-    .x(function(d) { return x(d.offset); })
-    .y(function(d) { return y(d.frequency); })
+    .x(function(d) { return x(d.x); })
+    .y(function(d) { return y(d.y); })
 
 var chart = d3.select('.chart')
     .attr('width', width + margin.left + margin.right)
@@ -68,8 +68,6 @@ var chart = d3.select('.chart')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 // buttons
-var titleArtist = [];
-var selected = [];
 var setListeners = function() {
     $('.selector').click(function(e) {
         e.preventDefault();
@@ -152,7 +150,7 @@ var createFinalPitch = function(m) {
         'duration': m.notes[m.notes.length - 1].duration,
         'offset': m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset,
         'frequency': m.notes[m.notes.length - 1].frequency,
-        'fromRoot': m.notes[m.notes.length - 1].fromRoot
+        'fromRoot': +m.notes[m.notes.length - 1].fromRoot
     }
     if (lastNote.frequency === 'rest') {
         var i = m.notes.length - 1;
@@ -160,7 +158,7 @@ var createFinalPitch = function(m) {
             i -= 1;
         }
         lastNote.frequency = m.notes[i].frequency;
-        lastNote.fromRoot = m.notes[i].fromRoot;
+        lastNote.fromRoot = +m.notes[i].fromRoot;
     }
     return lastNote;
 }
@@ -178,13 +176,13 @@ var formatData = function(data) {
         melody.notes = [];
         m.notes.map(function(n, i) {
             // skip initial rests
-            if (melody.notes.length === 1 || n.frequency !== 'rest') {
+            if (n.frequency !== 'rest') {
                 melody.notes.push(n);
                 endPoint = {
                     'duration': 0,
                     'offset': n.offset + n.duration,
                     'frequency': n.frequency,
-                    'fromRoot': n.fromRoot
+                    'fromRoot': +n.fromRoot
                 }
                 melody.notes.push(endPoint);
             }
@@ -195,84 +193,124 @@ var formatData = function(data) {
     return withEndPoints;
 }
 
-d3.json('malhun.json', function(error, data) {
-    if (error) return console.warn(error);
+var chartSteps = function() {
+    d3.json('malhun.json', function(error, data) {
+        if (error) return console.warn(error);
+        data = formatData(data);
+        setColors(data);
 
-    data = formatData(data);
-    setColors(data);
+        console.log('set axis')
+        y = d3.scale.linear()
+            .range([height, 0])
+            .domain([
+            d3.min(data, function(d) {
+                return (d3.min(d.notes, function(d) { return d.fromRoot }))
+            }), d3.max(data, function(d) {
+                return (d3.max(d.notes, function(d) { return d.fromRoot }))
+            })
+        ]);
 
-    x.domain([0, (d3.max(data, function(d) {
-        return (d3.max(d.notes, function(d) { return d.offset }))
-    }))]);
-    y.domain([
-        d3.min(data, function(d) {
-            return (d3.min(d.notes, function(d) { return d.frequency }))
-        }), d3.max(data, function(d) {
-            return (d3.max(d.notes, function(d) { return d.frequency }))
-        })
-    ]);
+        yAxis.scale(y).tickValues(null).tickFormat(null);
 
-    // add axes, title
-    chart.append('g')
-        .attr('class', 'axis axis--x')
-        .attr('transform', 'translate(0,' + height + ')')
-        .call(xAxis)
-      .append('text')
-        .attr('x', width - 10)
-        .attr('y', -6)
-        .attr('dx', '.71em')
-        .style('text-anchor', 'end')
-        .text("Melody's Duration, Normalized to 100%")
+        chart = d3.select('.chart').transition();
+        chart.select('.axis--y')
+            .duration(750)
+            .call(yAxis);
 
-    chart.append('g')
-        .attr('class', 'axis axis--y')
-        .call(yAxis)
-      .append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('y', 6)
-        .attr('dy', '.71em')
-        .style('text-anchor', 'end')
-        .text('Pitch');
-
-    chart.append('g')
-        .attr('class', 'title')
-      .append('text')
-        .attr('y', 20)
-        .attr('x', width / 2)
-        .style('text-anchor', 'middle')
-        .text('Contours of Some Malhun Melodies');
-
-    // visualize data
-    var melody = chart.selectAll('.melody')
-        .data(data)
-      .enter().append('g')
-        .attr('class', 'melody')
-        .attr('id', function(d) {
-            return d.metadata.title + ":" + d.metadata.artist;
-        })
-
-    melody.append('path')
-        .attr('class', 'line')
-        .attr('d', function(d) {
-            var values = d.notes.map(function(note, index) {
-                return { offset: note.offset, frequency: note.frequency }
+        var melodies = chart.selectAll('.melody');
+        melodies.select('path')
+            .duration(750)
+            .attr('d', function(d) {
+                var values = d.notes.map(function(note) {
+                    return { x: note.offset, y: note.fromRoot }
+                });
+                return line(values);
             });
-            return line(values);
-        })
-        .attr('id', function(d, i) { return 'path-' + i; })
-        .style('stroke', function(d) { return color(d.metadata.title + ": " + d.metadata.artist) })
+    })
+}
 
-    melody.append('text')
-        .attr('dy', -5)
-      .append('textPath')
-        .attr('class', 'textpath')
-        .attr('startOffset', function(d) {
-            var numRefrains = d3.max(data, function (d) { return Number(d.metadata.refrain) });
-            var refrain = (Number(d.metadata.refrain) - 1) * 1.0
-            return String(refrain / numRefrains * 100.0) + '%';
-        })
-        .attr('xlink:href', function(d, i) { return '#path-' + i; })
-        .text(function(d) { return d.metadata.title + ' (' + d.metadata.artist + '), harba ' + d.metadata.refrain; })
+var chartPitches = function() {
+    d3.json('malhun.json', function(error, data) {
+        if (error) return console.warn(error);
 
-    createButtons();
-})
+        data = formatData(data);
+        setColors(data);
+
+        x.domain([0, (d3.max(data, function(d) {
+            return (d3.max(d.notes, function(d) { return d.offset }))
+        }))]);
+        y.domain([
+            d3.min(data, function(d) {
+                return (d3.min(d.notes, function(d) { return d.frequency }))
+            }), d3.max(data, function(d) {
+                return (d3.max(d.notes, function(d) { return d.frequency }))
+            })
+        ]);
+
+        // add axes, title
+        chart.append('g')
+            .attr('class', 'axis axis--x')
+            .attr('transform', 'translate(0,' + height + ')')
+            .call(xAxis)
+          .append('text')
+            .attr('x', width - 10)
+            .attr('y', -6)
+            .attr('dx', '.71em')
+            .style('text-anchor', 'end')
+            .text("Melody's Duration, Normalized to 100%")
+
+        chart.append('g')
+            .attr('class', 'axis axis--y')
+            .call(yAxis)
+          .append('text')
+            .attr('transform', 'rotate(-90)')
+            .attr('y', 6)
+            .attr('dy', '.71em')
+            .style('text-anchor', 'end')
+            .text('Pitch');
+
+        chart.append('g')
+            .attr('class', 'title')
+          .append('text')
+            .attr('y', 20)
+            .attr('x', width / 2)
+            .style('text-anchor', 'middle')
+            .text('Contours of Some Malhun Melodies');
+
+        // visualize data
+        var melody = chart.selectAll('.melody')
+            .data(data)
+          .enter().append('g')
+            .attr('class', 'melody')
+            .attr('id', function(d) {
+                return d.metadata.title + ":" + d.metadata.artist;
+            })
+
+        melody.append('path')
+            .attr('class', 'line')
+            .attr('d', function(d) {
+                var values = d.notes.map(function(note, index) {
+                    return { x: note.offset, y: note.frequency }
+                });
+                return line(values);
+            })
+            .attr('id', function(d, i) { return 'path-' + i; })
+            .style('stroke', function(d) { return color(d.metadata.title + ": " + d.metadata.artist) })
+
+        melody.append('text')
+            .attr('dy', -5)
+          .append('textPath')
+            .attr('class', 'textpath')
+            .attr('startOffset', function(d) {
+                var numRefrains = d3.max(data, function (d) { return Number(d.metadata.refrain) });
+                var refrain = (Number(d.metadata.refrain) - 1) * 1.0
+                return String(refrain / numRefrains * 100.0) + '%';
+            })
+            .attr('xlink:href', function(d, i) { return '#path-' + i; })
+            .text(function(d) { return d.metadata.title + ' (' + d.metadata.artist + '), harba ' + d.metadata.refrain; })
+
+        createButtons();
+    })
+}
+
+chartPitches();
