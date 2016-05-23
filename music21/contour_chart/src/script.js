@@ -21,7 +21,7 @@ var yAxis = d3.svg.axis()
     .orient('left')
 
 var line = d3.svg.line()
-    .interpolate('linear')
+    .interpolate('basis')
     .x(function(d) { return x(d.offset); })
     .y(function(d) { return y(d.frequency); })
 
@@ -90,111 +90,82 @@ var filterData = function(data) {
     return data
 }
 
-var formatData = function(data) {
-    // set up colors and normalize durations
+var setColors = function(data) {
     data.map(function(m) {
         var domain = m.metadata.title + ': ' + m.metadata.artist;
         if (titleArtist.indexOf(domain) === -1) { titleArtist.push(domain) }
-
-        var pieceLength = m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset;
-        m.notes.map(function(n) {
-        n.offset = n.offset / pieceLength * 100;
-        n.duration = n.duration / pieceLength * 100;
-        })
     })
-
-    // finish color setup
     var color = d3.scale.category10()
         .domain(titleArtist);
+}
 
+var offsetToPercent = function(data) {
+    data.map(function(m) {
+        var pieceLength = m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset;
+        m.notes.map(function(n) {
+            n.offset = n.offset / pieceLength * 100;
+            n.duration = n.duration / pieceLength * 100;
+        });
+    });
+    return data;
+}
+
+var createFinalPitch = function(m) {
+    // find the last non-rest in a melody
+    // create a pitch that extends to the end of the pieceLength
+    var lastNote = {
+        'duration': m.notes[m.notes.length - 1].duration,
+        'offset': m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset,
+        'frequency': m.notes[m.notes.length - 1].frequency,
+        'fromRoot': m.notes[m.notes.length - 1].fromRoot
+    }
+    if (lastNote.frequency === 'rest') {
+        var i = m.notes.length - 1;
+        while (m.notes[i].frequency === 'rest') {
+            i -= 1;
+        }
+        lastNote.frequency = m.notes[i].frequency;
+        lastNote.fromRoot = m.notes[i].fromRoot;
+    }
+    return lastNote;
+}
+
+var formatData = function(data) {
+    data = offsetToPercent(data);
     shortestDuration = d3.min(data, function(d) {
         return (d3.min(d.notes, function(d) { return d.duration }))
     })
-    filledIn = []
-    var xAxisLength = 100;
+
+    withEndPoints = []
     data.map(function(m) {
         var melody = {};
         melody.metadata = m.metadata;
         melody.notes = [];
-
-        // create final note to append later, adjust for final rests
-        var lastNote = {
-            'duration': m.notes[m.notes.length - 1].duration,
-            'offset': m.notes[m.notes.length - 1].duration + m.notes[m.notes.length - 1].offset,
-            'frequency': m.notes[m.notes.length - 1].frequency,
-            'fromRoot': m.notes[m.notes.length - 1].fromRoot
-        }
-
-        if (lastNote.frequency === 'rest') {
-            var i = m.notes.length - 1;
-            while (m.notes[i].frequency === 'rest') {
-                i -= 1;
-            }
-            lastNote.frequency = m.notes[i].frequency;
-            lastNote.fromRoot = m.notes[i].fromRoot;
-        }
-
         m.notes.map(function(n, i) {
             // skip initial rests
             if (melody.notes.length === 1 || n.frequency !== 'rest') {
                 melody.notes.push(n);
-            }
-
-            // extend lengths to almost meet the next pitch change
-            // check that we are not on the last note
-            if (i < m.notes.length - 1) {
-
-                // check that this is not a rest that was skipped over
-                previous = melody.notes[melody.notes.length - 1];
-                var previousOffset = 0;
-                if (previous) {
-                    previousOffset = previous.offset;
+                endPoint = {
+                    'duration': 0,
+                    'offset': n.offset + n.duration,
+                    'frequency': n.frequency,
+                    'fromRoot': n.fromRoot
                 }
-                if (n.offset >= previousOffset) {
-
-                    // create new note object to insert
-                    var advance = 1;
-                    var next = {
-                        'duration': m.notes[i + advance].duration,
-                        'offset': m.notes[i + advance].offset - shortestDuration,
-                        'frequency': m.notes[i + advance].frequency,
-                        'fromRoot': m.notes[i + advance].fromRoot
-                    }
-
-                    // if a rest is next, skip ahead
-                    while (next.frequency === 'rest') {
-                        advance += 1;
-
-                        // in case we skipped to the end
-                        if (i + advance >= m.notes.length) {
-                            var next = lastNote
-                            break;
-                        } else {
-                            var next = {
-                                'duration': m.notes[i + advance].duration,
-                                'offset': m.notes[i + advance].offset - shortestDuration,
-                                'frequency': n.frequency,
-                                'fromRoot': n.fromRoot
-                            }
-                        }
-                    }
-                    melody.notes.push(next);
-
-                }
-            } else {
-                melody.notes.push(lastNote);
+                melody.notes.push(endPoint);
             }
         })
-        filledIn.push(melody)
-    })
-    return filledIn;
+        melody.notes.push(createFinalPitch(m));
+        withEndPoints.push(melody)
+    });
+    return withEndPoints;
 }
 
 d3.json('malhun.json', function(error, data) {
     if (error) return console.warn(error);
 
-    // build chart
     data = formatData(data);
+    setColors(data);
+
     x.domain([0, (d3.max(data, function(d) {
         return (d3.max(d.notes, function(d) { return d.offset }))
     }))]);
