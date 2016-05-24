@@ -81,14 +81,31 @@ var setListeners = function() {
         if (selected.length === 0) {
             $('.melody').each(function(index) {
                 $(this).css('opacity', '');
+                $(this).find('.line').css('opacity', '');
             })
         } else {
             $('.melody').each(function(index) {
                 var melodyID = $(this).attr('id').replace(':', ': ');
                 if (selected.indexOf(melodyID) !== -1) {
-                    $(this).css('opacity', '.9')
+                    $(this).css('opacity','1')
+                    $(this).find('path')
+                        .css('stroke-width', '5')
+                        .hover(function(e) {
+                            $(this)
+                                .css('stroke-width', '10')
+                                .css('opacity', '1')
+                        }, function(e) {
+                            $(this)
+                                .css('stroke-width', '')
+                                .css('opacity', '1')
+                        });
                 } else {
-                    $(this).css ('opacity', '.1')}
+                    $(this).find('path').hover(function(e) {
+                        $(this).css('opacity', '.5')
+                    }, function(e) {
+                        $(this).css('opacity', '')
+                    });
+                }
             });
         }
     });
