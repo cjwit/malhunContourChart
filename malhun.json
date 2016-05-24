@@ -3410,6 +3410,972 @@
     {
         "notes": [
             {
+                "duration": 0.75,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 0
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 1.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 2.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 2.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 3.25
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 3.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 440,
+                "offset": 4.75
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 5.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 6.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 7.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 7.75
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 8.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 9.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 10.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 10.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 11.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 11.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 12.25
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 12.75
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 14.25
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 15.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 17.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 17.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 18.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 18.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 19.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 19.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 20.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 20.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 21.25
+            },
+            {
+                "duration": 1,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 21.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 22.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 23.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 23.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 24.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 24.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 25.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 25.75
+            },
+            {
+                "duration": 1,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 26.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 27.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 27.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 28.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 28.75
+            },
+            {
+                "duration": 1,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 29.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 659.2551138257401,
+                "offset": 30.25
+            },
+            {
+                "duration": 1.5,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 30.75
+            },
+            {
+                "duration": 1,
+                "fromRoot": 3,
+                "frequency": 587.3295358348153,
+                "offset": 32.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 554.3652619537443,
+                "offset": 33.25
+            },
+            {
+                "duration": 3,
+                "fromRoot": 0,
+                "frequency": 493.8833012561241,
+                "offset": 33.75
+            }
+        ],
+        "root": 493.8833012561241,
+        "metadata": {
+            "isFinal": 1,
+            "title": "Ghazel",
+            "artist": "Haroushi",
+            "refrain": "10",
+            "fileName": "Ghazel-Haroushi-10-Final.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 1.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 2
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 2.25
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 2.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 3.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 5.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 6.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 9,
+                "frequency": 739.988845423269,
+                "offset": 7
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 7.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 8
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 9,
+                "frequency": 739.988845423269,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 9
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 9.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 10
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 11
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 11.25
+            },
+            {
+                "duration": 1,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 11.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 12.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 13.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 13.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 14
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 16
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 16.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 17.25
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 18.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 19
+            },
+            {
+                "duration": 1,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 19.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 20.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 20.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 21.25
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 21.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 22.25
+            },
+            {
+                "duration": 2,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 22.5
+            }
+        ],
+        "root": 440,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Ghazel",
+            "artist": "Haroushi",
+            "refrain": "2",
+            "fileName": "Ghazel-Haroushi-2.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 0
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 0.25
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 1.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 2.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 2.5
+            },
+            {
+                "duration": 2,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 2.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 4.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 5.25
+            },
+            {
+                "duration": 1,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 5.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 6.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 7.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 7.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 8.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 9.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 9.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 10
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 10.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 10.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 11.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 11.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 12
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 12.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 587.3295358348153,
+                "offset": 13.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 587.3295358348153,
+                "offset": 13.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 14
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 14.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 15.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 15.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 16.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 16.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 17
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 17.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 17.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 18
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 18.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 18.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 19.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 19.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 659.2551138257401,
+                "offset": 20.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 6,
+                "frequency": 622.253967444162,
+                "offset": 20.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 21
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 21.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 554.3652619537443,
+                "offset": 21.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 493.8833012561241,
+                "offset": 22
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 22.5
+            },
+            {
+                "duration": 2,
+                "fromRoot": 0,
+                "frequency": 440,
+                "offset": 22.75
+            }
+        ],
+        "root": 440,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Ghazel",
+            "artist": "Haroushi",
+            "refrain": "7",
+            "fileName": "Ghazel-Haroushi-7.xml"
+        }
+    },
+    {
+        "notes": [
+            {
                 "duration": 0.25,
                 "fromRoot": "rest",
                 "frequency": "rest",
@@ -3819,6 +4785,534 @@
             "artist": "Unknown",
             "refrain": "2",
             "fileName": "Ghita-Unknown-2.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 0
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 1
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 2
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 2.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 3.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 4
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 4.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 5.5
+            },
+            {
+                "duration": 2,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 6
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 8
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 10,
+                "frequency": 622.253967444162,
+                "offset": 8.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 9,
+                "frequency": 587.3295358348153,
+                "offset": 8.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 9
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 9.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 10
+            },
+            {
+                "duration": 0.125,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 10.5
+            },
+            {
+                "duration": 0.125,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 10.625
+            },
+            {
+                "duration": 0.125,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 10.75
+            },
+            {
+                "duration": 0.125,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 10.875
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 11
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 12
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 12.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 12.75
+            },
+            {
+                "duration": 0.3333333333333333,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 13
+            },
+            {
+                "duration": 0.3333333333333333,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 13.333333333333334
+            },
+            {
+                "duration": 0.3333333333333333,
+                "fromRoot": 9,
+                "frequency": 587.3295358348153,
+                "offset": 13.666666666666666
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 14
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 9,
+                "frequency": 587.3295358348153,
+                "offset": 14.166666666666666
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 14.333333333333334
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 14.5
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 14.666666666666666
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 14.833333333333334
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 15
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 15.166666666666666
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 15.333333333333334
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 15.5
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 15.666666666666666
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 15.833333333333334
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 16
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 311.1269837220808,
+                "offset": 16.5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": -2,
+                "frequency": 311.1269837220808,
+                "offset": 17
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 17.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 18
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": "rest",
+                "frequency": "rest",
+                "offset": 19
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 19.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 19.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 20
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 7,
+                "frequency": 523.2511306011974,
+                "offset": 20.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 20.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 5,
+                "frequency": 466.1637615180899,
+                "offset": 21
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 440,
+                "offset": 21.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 21.75
+            },
+            {
+                "duration": 0.75,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 22
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 391.99543598174927,
+                "offset": 22.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 23
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": -2,
+                "frequency": 311.1269837220808,
+                "offset": 23.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 349.2282314330038,
+                "offset": 23.5
+            }
+        ],
+        "root": 349.2282314330038,
+        "metadata": {
+            "isFinal": 0,
+            "title": "Gnaoui",
+            "artist": "Hussein",
+            "refrain": "1",
+            "fileName": "Gnaoui-Hussein-1.xml"
+        }
+    },
+    {
+        "notes": [
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 4,
+                "frequency": 587.3295358348153,
+                "offset": 0
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 5,
+                "frequency": 622.253967444162,
+                "offset": 0.16666666666666666
+            },
+            {
+                "duration": 0.16666666666666666,
+                "fromRoot": 4,
+                "frequency": 587.3295358348153,
+                "offset": 0.3333333333333333
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 5,
+                "frequency": 622.253967444162,
+                "offset": 0.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 4,
+                "frequency": 587.3295358348153,
+                "offset": 0.75
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 1
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 1.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 1.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 466.1637615180899,
+                "offset": 2
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 466.1637615180899,
+                "offset": 2.25
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 2.5
+            },
+            {
+                "duration": 1,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 3
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 4
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 4.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 5
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 4,
+                "frequency": 587.3295358348153,
+                "offset": 5.25
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 5.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 2,
+                "frequency": 523.2511306011974,
+                "offset": 6
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 466.1637615180899,
+                "offset": 6.5
+            },
+            {
+                "duration": 0.25,
+                "fromRoot": 0,
+                "frequency": 466.1637615180899,
+                "offset": 6.75
+            },
+            {
+                "duration": 0.5,
+                "fromRoot": 0,
+                "frequency": 466.1637615180899,
+                "offset": 7
+            }
+        ],
+        "root": 466.1637615180899,
+        "metadata": {
+            "isFinal": 1,
+            "title": "Gnaoui",
+            "artist": "Hussein",
+            "refrain": "7",
+            "fileName": "Gnaoui-Hussein-7-Final.xml"
         }
     },
     {
