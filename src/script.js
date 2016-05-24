@@ -88,23 +88,8 @@ var setListeners = function() {
                 var melodyID = $(this).attr('id').replace(':', ': ');
                 if (selected.indexOf(melodyID) !== -1) {
                     $(this).css('opacity','1')
-                    $(this).find('path')
-                        .css('stroke-width', '5')
-                        .hover(function(e) {
-                            $(this)
-                                .css('stroke-width', '10')
-                                .css('opacity', '1')
-                        }, function(e) {
-                            $(this)
-                                .css('stroke-width', '')
-                                .css('opacity', '1')
-                        });
                 } else {
-                    $(this).find('path').hover(function(e) {
-                        $(this).css('opacity', '.5')
-                    }, function(e) {
-                        $(this).css('opacity', '')
-                    });
+                    $(this).css('opacity', '0.1')
                 }
             });
         }
@@ -186,11 +171,13 @@ var formatData = function(data) {
     })
 
     withEndPoints = []
+    var numNotes = 0;
     data.map(function(m) {
         var melody = {};
         melody.metadata = m.metadata;
         melody.notes = [];
         m.notes.map(function(n, i) {
+            numNotes += 1;
             // skip initial rests
             if (n.frequency !== 'rest') {
                 melody.notes.push(n);
@@ -206,6 +193,7 @@ var formatData = function(data) {
         melody.notes.push(createFinalPitch(m));
         withEndPoints.push(melody)
     });
+    console.log(numNotes + ' individual notes')
     return withEndPoints;
 }
 
@@ -351,7 +339,9 @@ var chartPitches = function() {
             .attr('y', 20)
             .attr('x', width / 2)
             .style('text-anchor', 'middle')
-            .text('Contours of Some Malhun Melodies');
+            .text(function() {
+                return data.length + ' Melodic Contours from Malhun';
+            });
 
         // visualize data
         var melody = chart.selectAll('.melody')
