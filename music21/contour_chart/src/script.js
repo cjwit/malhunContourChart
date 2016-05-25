@@ -13,18 +13,18 @@ var y = d3.scale.log()
     .range([height, 0]);
 
 var pitchLabels = {
+    196: "G",
+    208: "G#",
+    220: "A",
+    233: "A#",
+    247: "B",
     262: "C",
     277: "C#",
     294: "D",
     311: "D#",
     330: "E",
     349: "F",
-    370: "F#",
-    392: "G",
-    415: "G#",
-    440: "A",
-    466: "A#",
-    494: "B"
+    370: "F#"
 };
 
 var formatPitch = function(d) {
