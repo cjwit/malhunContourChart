@@ -38,6 +38,7 @@ def getPitchCollection(flatScore):
 def getNotes(recursiveScore, rootFrequency):
     notes = []
     pitchCollection = getPitchCollection(recursiveScore.notes)
+    transposingUp = rootFrequency < 312 # just above D# in the middle of the bass clef
     for n in recursiveScore.notes:
         noteEntry = {}
         noteEntry["offset"] = float(n.getOffsetBySite(recursiveScore))
@@ -47,6 +48,8 @@ def getNotes(recursiveScore, rootFrequency):
         if n.isNote:
             noteEntry["fromRoot"] = fromRoot(n.pitch.frequency, rootFrequency, pitchCollection)
             noteEntry["frequency"] = n.pitch.frequency
+            if transposingUp:
+                noteEntry["frequency"] *= 2
         notes.append(noteEntry)
     return notes
 
@@ -60,15 +63,16 @@ def createEntry(thisScore):
 
 def getData(collection):
     data = []
-    for s in collection:
+    total = len(collection)
+    for i, s in enumerate(collection):
         data.append(createEntry(s))
-    with open('contour_chart/malhun.json', 'w') as outfile:
+    	progress = i * 1.0 / total * 100
+        print '\r' + str(round(progress, 0)) + '%'
+    savePath = 'contour_chart/malhun.json'
+    with open(savePath, 'w') as outfile:
         json.dump(data, outfile)
-        print 'Output done'
+        print 'Data saved to', savePath
 
 from music21 import *
 import json
 getData(getMalhun())
-
-# jsonData = dumps(data)
-# print jsonData
