@@ -7,10 +7,9 @@ def getMalhun():
             malhun.append(this)
     return malhun
 
-# file name = title-singer-refrain-final
-def createMetadata(thisScore):
+# file name = title-singer-refrain-Final
+def createMetadata(fileName):
     metadata = {}
-    fileName = thisScore.metadata.title
     metadata["fileName"] = fileName
     splitName = fileName.split('-')
     metadata["title"] = splitName[0]
@@ -22,40 +21,54 @@ def createMetadata(thisScore):
         metadata["isFinal"] = 0
     return metadata
 
-def findRoot(thisScore):
-    # filter for multiple parts
-    return thisScore.flat.notes[-1].pitch.frequency
+def fromRoot(pitchFrequency, rootFrequency, pitchCollection):
+    # return value from pitchCollection - root's value
+    rootIndex = pitchCollection.index(rootFrequency)
+    pitchIndex = pitchCollection.index(pitchFrequency)
+    return pitchIndex - rootIndex
 
-def getNotes(thisScore):
+def getPitchCollection(flatScore):
+    pitches = [];
+    for n in flatScore:
+        if n.pitch.frequency not in pitches:
+            pitches.append(n.pitch.frequency)
+    pitches.sort()
+    return pitches
+
+def getNotes(recursiveScore, rootFrequency):
     notes = []
-    root = thisScore.flat.notes[-1].pitch
-    for n in thisScore.recurse().notesAndRests:
+    pitchCollection = getPitchCollection(recursiveScore.notes)
+    for n in recursiveScore.notes:
         noteEntry = {}
-        noteEntry["offset"] = float(n.getOffsetBySite(thisScore.recurse()))
+        noteEntry["offset"] = float(n.getOffsetBySite(recursiveScore))
         noteEntry["duration"] = float(n.quarterLength)
         noteEntry["fromRoot"] = 'rest'
         noteEntry["frequency"] = 'rest'
         if n.isNote:
-            noteEntry["fromRoot"] = float(interval.Interval(root, n.pitch).chromatic.semitones)
+            noteEntry["fromRoot"] = fromRoot(n.pitch.frequency, rootFrequency, pitchCollection)
             noteEntry["frequency"] = n.pitch.frequency
         notes.append(noteEntry)
     return notes
 
 def createEntry(thisScore):
     entry = {}
-    entry["metadata"] = createMetadata(thisScore)
-    entry["root"] = findRoot(thisScore)
-    entry["notes"] = getNotes(thisScore)
+    recursiveScore = thisScore.recurse()
+    entry["metadata"] = createMetadata(thisScore.metadata.title)
+    entry["root"] = recursiveScore.notes[-1].pitch.frequency
+    entry["notes"] = getNotes(recursiveScore, entry["root"])
     return entry
 
 def getData(collection):
     data = []
     for s in collection:
         data.append(createEntry(s))
-    return data
+    with open('contour_chart/malhun.json', 'w') as outfile:
+        json.dump(data, outfile)
+        print 'Output done'
 
 from music21 import *
-from json import dumps
-data = getData(getMalhun())
-jsonData = dumps(data)
-print jsonData
+import json
+getData(getMalhun())
+
+# jsonData = dumps(data)
+# print jsonData
