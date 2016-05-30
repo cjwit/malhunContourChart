@@ -51,8 +51,6 @@ def getNotes(recursiveScore, rootFrequency):
             if transposingUp:
                 noteEntry["frequency"] *= 2
         notes.append(noteEntry)
-    if recursiveScore.notes[-1] != recursiveScore.notesAndRests[-1]
-        print recursiveScore.notesAndRests[-1]
     return notes
 
 def createEntry(thisScore):
@@ -63,6 +61,48 @@ def createEntry(thisScore):
     entry["notes"] = getNotes(recursiveScore, entry["root"])
     return entry
 
+def formatTo100(melody, increment):
+    scaled = []
+    for n in melody['notes']:
+        formattedNote = {}
+        formattedNote['offset'] = n['offset'] * increment
+        formattedNote['frequency'] = n['frequency']
+        formattedNote['fromRoot'] = n['fromRoot']
+        scaled.append(formattedNote)
+    sampled = []
+    x = 0
+    i = 0
+    while x <= 99:
+        currentNote = melody['notes'][i]
+        newPoint = {}
+        if i < len(melody['notes']) - 1:
+            nextNote = melody['notes'][i + 1]
+            if x > nextNote['offset']:
+                currentNote = nextNote
+                i += 1
+        newPoint['offset'] = x
+        newPoint['frequency'] = currentNote['frequency']
+        newPoint['fromRoot'] = currentNote['fromRoot']
+        sampled.append(newPoint)
+        x += 1
+    return sampled
+
+def checkSimilarity(melody1, melody2):
+    name1 = melody1['metadata']['fileName']
+    name2 = melody2['metadata']['fileName']
+    sampleSize = 100.0
+    increment1 = sampleSize / melody1['notes'][-1]['offset'] # + melody1['notes'][-1]['duration']
+    increment2 = sampleSize / melody2['notes'][-1]['offset'] # + melody2['notes'][-1]['duration']
+    formatted1 = formatTo100(melody1, increment1)
+    formatted2 = formatTo100(melody2, increment2)
+    print 'last:', formatted1[0]['offset'], formatted1[-1]['offset'], len(formatted1)
+    print 'last:', formatted1[0]['offset'], formatted2[-1]['offset'], len(formatted1)
+
+checkSimilarity(data[0], data[1])
+    # find closest previous y at x value, append to formatted list
+    # find distance between y values at x = 0-100
+    # return average distance
+
 def getData(collection):
     data = []
     total = len(collection)
@@ -70,10 +110,17 @@ def getData(collection):
         data.append(createEntry(s))
     	progress = i * 1.0 / total * 100
         print '\r' + str(round(progress, 0)) + '%'
-    savePath = 'contour_chart/malhun.json'
-    with open(savePath, 'w') as outfile:
-        json.dump(data, outfile)
-        print 'Data saved to', savePath
+    results = []
+    return data
+    # check each set against every other set
+    # save similarity to an object: melody1, melody2, similarity
+    # sort and print: Similarity: X, melody 1, melody 2
+
+##### to save, once I figure out a format
+#    savePath = 'contour_chart/malhun_similarity.json'
+#    with open(savePath, 'w') as outfile:
+#        json.dump(data, outfile)
+#        print 'Data saved to', savePath
 
 from music21 import *
 import json
