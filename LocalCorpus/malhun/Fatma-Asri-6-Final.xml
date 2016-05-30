@@ -5,7 +5,7 @@
     <encoding>
       <software>Finale 2014 for Mac</software>
       <software>Dolet Light for Finale 2014</software>
-      <encoding-date>2016-05-20</encoding-date>
+      <encoding-date>2016-05-27</encoding-date>
       <supports attribute="new-system" element="print" type="yes" value="yes"/>
       <supports attribute="new-page" element="print" type="yes" value="yes"/>
       <supports element="accidental" type="yes"/>
@@ -76,7 +76,7 @@
   </part-list>
   <!--=========================================================-->
   <part id="P1">
-    <measure number="1" width="292">
+    <measure number="1" width="276">
       <print>
         <system-layout>
           <top-system-distance>211</top-system-distance>
@@ -86,7 +86,7 @@
       <attributes>
         <divisions>4</divisions>
         <key>
-          <fifths>-3</fifths>
+          <fifths>-1</fifths>
           <mode>major</mode>
         </key>
         <time>
@@ -101,10 +101,10 @@
       <sound tempo="120"/>
       <direction placement="above">
         <direction-type>
-          <words default-x="138" default-y="6" font-style="italic" halign="center">chorus</words>
+          <words default-x="118" default-y="6" font-style="italic" halign="center">chorus</words>
         </direction-type>
       </direction>
-      <note default-x="127">
+      <note default-x="107">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -120,7 +120,7 @@
           <text>irḥ</text>
         </lyric>
       </note>
-      <note default-x="201">
+      <note default-x="182">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -135,7 +135,7 @@
           <text>mī</text>
         </lyric>
       </note>
-      <note default-x="257">
+      <note default-x="240">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -152,7 +152,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="2" width="177">
+    <measure number="2" width="181">
       <note default-x="14">
         <pitch>
           <step>B</step>
@@ -168,7 +168,7 @@
           <text>rāḥt</text>
         </lyric>
       </note>
-      <note default-x="68">
+      <note default-x="69">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -183,7 +183,7 @@
           <text>lʿa</text>
         </lyric>
       </note>
-      <note default-x="122">
+      <note default-x="124">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -199,7 +199,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="3" width="201">
+    <measure number="3" width="205">
       <note default-x="14">
         <pitch>
           <step>B</step>
@@ -215,7 +215,7 @@
           <text>tar</text>
         </lyric>
       </note>
-      <note default-x="49">
+      <note default-x="50">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -233,7 +233,7 @@
           <text>ḥā</text>
         </lyric>
       </note>
-      <note default-x="106">
+      <note default-x="109">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -249,7 +249,7 @@
           <tied type="stop"/>
         </notations>
       </note>
-      <note default-x="153">
+      <note default-x="156">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -267,7 +267,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="4" width="211">
+    <measure number="4" width="216">
       <direction placement="above">
         <direction-type>
           <words default-x="15" default-y="11" font-style="italic" halign="center">solo</words>
@@ -287,7 +287,7 @@
           <text>min</text>
         </lyric>
       </note>
-      <note default-x="75">
+      <note default-x="76">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -306,7 +306,7 @@
           <extend type="start"/>
         </lyric>
       </note>
-      <note default-x="112">
+      <note default-x="115">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -323,7 +323,7 @@
           <extend type="stop"/>
         </lyric>
       </note>
-      <note default-x="173">
+      <note default-x="177">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -340,7 +340,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="5" width="173">
+    <measure number="5" width="176">
       <note default-x="14">
         <pitch>
           <step>B</step>
@@ -362,7 +362,7 @@
           <text>sqā</text>
         </lyric>
       </note>
-      <note default-x="67">
+      <note default-x="69">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -375,7 +375,7 @@
           <slur number="1" type="stop"/>
         </notations>
       </note>
-      <note default-x="101">
+      <note default-x="103">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -392,13 +392,13 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="6" width="283">
+    <measure number="6" width="268">
       <print new-system="yes">
         <system-layout>
           <system-distance>114</system-distance>
         </system-layout>
       </print>
-      <note default-x="97">
+      <note default-x="77">
         <rest/>
         <duration>4</duration>
         <voice>1</voice>
@@ -406,10 +406,10 @@
       </note>
       <direction placement="above">
         <direction-type>
-          <words default-x="168" default-y="12" font-style="italic" halign="center">chorus</words>
+          <words default-x="149" default-y="12" font-style="italic" halign="center">chorus</words>
         </direction-type>
       </direction>
-      <note default-x="154">
+      <note default-x="136">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -428,7 +428,7 @@
           <extend type="start"/>
         </lyric>
       </note>
-      <note default-x="190">
+      <note default-x="172">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -445,7 +445,7 @@
           <extend type="stop"/>
         </lyric>
       </note>
-      <note default-x="247">
+      <note default-x="231">
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -461,7 +461,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="7" width="202">
+    <measure number="7" width="206">
       <note default-x="14">
         <pitch>
           <step>D</step>
@@ -476,7 +476,7 @@
           <text>qa</text>
         </lyric>
       </note>
-      <note default-x="72">
+      <note default-x="73">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -490,7 +490,7 @@
           <text>ḥā</text>
         </lyric>
       </note>
-      <note default-x="129">
+      <note default-x="132">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -506,7 +506,7 @@
           <text>īr</text>
         </lyric>
       </note>
-      <note default-x="165">
+      <note default-x="168">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -524,7 +524,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="8" width="198">
+    <measure number="8" width="202">
       <note default-x="14">
         <pitch>
           <step>B</step>
@@ -540,7 +540,7 @@
           <text>tim</text>
         </lyric>
       </note>
-      <note default-x="66">
+      <note default-x="68">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -559,10 +559,9 @@
           <text>sli</text>
         </lyric>
       </note>
-      <note default-x="99">
+      <note default-x="101">
         <pitch>
           <step>A</step>
-          <alter>-1</alter>
           <octave>4</octave>
         </pitch>
         <duration>2</duration>
@@ -574,7 +573,7 @@
           <slur number="1" type="stop"/>
         </notations>
       </note>
-      <note default-x="132">
+      <note default-x="134">
         <pitch>
           <step>G</step>
           <octave>4</octave>
@@ -590,10 +589,10 @@
       </note>
       <direction placement="above">
         <direction-type>
-          <words default-x="175" default-y="10" font-style="italic" halign="center">solo</words>
+          <words default-x="178" default-y="10" font-style="italic" halign="center">solo</words>
         </direction-type>
       </direction>
-      <note default-x="164">
+      <note default-x="168">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -609,7 +608,7 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="9" width="179">
+    <measure number="9" width="183">
       <note default-x="14">
         <pitch>
           <step>C</step>
@@ -639,7 +638,7 @@
           <text>al</text>
         </lyric>
       </note>
-      <note default-x="96">
+      <note default-x="98">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -654,7 +653,7 @@
           <text>lah</text>
         </lyric>
       </note>
-      <note default-x="147">
+      <note default-x="150">
         <rest/>
         <duration>2</duration>
         <voice>1</voice>
@@ -662,14 +661,14 @@
       </note>
     </measure>
     <!--=======================================================-->
-    <measure number="10" width="192">
+    <measure number="10" width="196">
       <note default-x="14">
         <rest/>
         <duration>4</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
-      <note default-x="65">
+      <note default-x="67">
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -683,7 +682,7 @@
           <text>ya</text>
         </lyric>
       </note>
-      <note default-x="98">
+      <note default-x="99">
         <pitch>
           <step>B</step>
           <alter>-1</alter>
@@ -698,7 +697,7 @@
           <text>faṭ</text>
         </lyric>
       </note>
-      <note default-x="150">
+      <note default-x="153">
         <pitch>
           <step>C</step>
           <octave>5</octave>
