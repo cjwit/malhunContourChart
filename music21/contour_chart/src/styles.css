@@ -45,7 +45,7 @@ a {
     shape-rendering: crispEdges; }
 
 .melody {
-  opacity: 0.1; }
+  opacity: 0.02; }
   .melody:hover {
     opacity: 0.9; }
     .melody:hover path {
