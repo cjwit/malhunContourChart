@@ -51,8 +51,6 @@ def getNotes(recursiveScore, rootFrequency):
             if transposingUp:
                 noteEntry["frequency"] *= 2
         notes.append(noteEntry)
-    if recursiveScore.notes[-1] != recursiveScore.notesAndRests[-1]
-        print recursiveScore.notesAndRests[-1]
     return notes
 
 def createEntry(thisScore):
