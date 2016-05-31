@@ -92,7 +92,12 @@ var setListeners = function() {
                 thisGroupDiv.children().removeClass('active');
                 $(this).button('reset')
             } else {
-                // add all melodies from this set to selected
+                thisGroupMelodies = thisGroupDiv.find('label');
+                thisGroupMelodies.each(function() {
+                    selected.push($(this).attr('id'));
+                })
+                thisGroupMelodies.addClass('active');
+
             }
         } else {
             // clicked button is for just one melody
@@ -103,7 +108,6 @@ var setListeners = function() {
                 selected.splice(index, 1)
             }
         }
-        console.log(selected);
 
         // change CSS based on selected array
         if (selected.length === 0) {
@@ -157,7 +161,7 @@ var createButtons = function() {
         if (groupDiv.html() === "") {
             var selectAll = $('<span></span>')
                 .attr('id', melody.title + "-" + melody.artist)
-                .addClass('btn btn-default selector')
+                .addClass('btn btn-xs btn-default selector')
                 .text(melody.title + ": " + melody.artist);
             groupDiv.append(selectAll);
         }
@@ -165,7 +169,7 @@ var createButtons = function() {
         // create the melody button
         var button = $('<label></label>')
             .attr('id', melody.title + "-" + melody.artist + "-" + melody.refrain)
-            .addClass('btn btn-default selector')
+            .addClass('btn btn-xs btn-default selector')
             .text(melody.refrain);
         var buttonInput = $('<input />')
             .attr('type', 'checkbox')
