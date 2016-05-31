@@ -4,6 +4,7 @@ var data,
     height = 500 - margin.top - margin.bottom,
     color = d3.scale.category20(),
     titleArtist = [],
+    allMelodies = [],
     selected = [];
 
 var x = d3.scale.linear()
@@ -70,14 +71,45 @@ var chart = d3.select('.chart')
 var setListeners = function() {
     $('.selector').click(function(e) {
         e.preventDefault();
-        var title = e.target.id;
-        var index = selected.indexOf(title)
-        if (index === -1) {
-            selected.push(title);
+        var id = e.target.id;
+        var thisIsASet = id.split("-").length === 2;
+        if (thisIsASet) {
+            // clicked button is for an entire set
+            var thisGroupDiv = $("div[id='" + id + "']");
+            var removing = false;
+            selected.forEach(function(m) {
+                if (m.indexOf(id) > -1) {
+                    removing = true;
+                }
+            })
+            if (removing) {
+                // remove all melodies of this set from selected
+                for (i = selected.length - 1; i >= 0; i--) {
+                    if (selected[i].indexOf(id) > -1) {
+                        selected.splice(i, 1)
+                    }
+                }
+                thisGroupDiv.children().removeClass('active');
+                $(this).button('reset')
+            } else {
+                thisGroupMelodies = thisGroupDiv.find('label');
+                thisGroupMelodies.each(function() {
+                    selected.push($(this).attr('id'));
+                })
+                thisGroupMelodies.addClass('active');
+
+            }
         } else {
-            selected.splice(index, 1)
+            // clicked button is for just one melody
+            var index = selected.indexOf(id)
+            if (index === -1) {
+                selected.push(id);
+            } else {
+                selected.splice(index, 1)
+            }
         }
 
+        // change CSS based on selected array
         if (selected.length === 0) {
             $('.melody').each(function(index) {
                 $(this).css('opacity', '');
@@ -85,7 +117,7 @@ var setListeners = function() {
             })
         } else {
             $('.melody').each(function(index) {
-                var melodyID = $(this).attr('id').replace(':', ': ');
+                var melodyID = $(this).attr('id');
                 if (selected.indexOf(melodyID) !== -1) {
                     $(this).css('opacity','1')
                 } else {
@@ -98,34 +130,60 @@ var setListeners = function() {
 
 var createButtons = function() {
     var buttons = $('#buttons');
-    // buttons.addClass('btn-group');
-    buttons.attr('data-toggle', 'buttons');
     titleArtist.map(function(title, index) {
-        var label = $('<label></label>')
-            .addClass('btn btn-default btn-sm selector')
-            .attr('id', title)
-        var button = $('<input/>')
+        var groupDiv = $('<div></div>')
+        groupDiv.addClass('btn-group')
+            .attr('data-toggle', 'buttons')
+            .attr('id', title.replace(': ', '-'))
+        buttons.append(groupDiv);
+    });
+
+    allMelodies.sort(function(a, b) {
+        aTitle = a.title.toLowerCase();
+        bTitle = b.title.toLowerCase()
+        if (aTitle === bTitle) {
+            aArtist = a.artist.toLowerCase();
+            bArtist = b.artist.toLowerCase();
+            if (aArtist === bArtist) {
+                return a.refrain - b.refrain
+            }
+            return aArtist > bArtist ? 1 : -1;
+        }
+        return aTitle > bTitle ? 1 : -1;
+    })
+
+    allMelodies.map(function(melody, index) {
+        var groupID = melody.title + "-" + melody.artist,
+            groupDiv = $("div[id='" + groupID + "']");
+        melody.refrain = Number(melody.refrain);
+
+        // check to see if this is the first button in the group
+        if (groupDiv.html() === "") {
+            var selectAll = $('<span></span>')
+                .attr('id', melody.title + "-" + melody.artist)
+                .addClass('btn btn-xs btn-default selector')
+                .text(melody.title + ": " + melody.artist);
+            groupDiv.append(selectAll);
+        }
+
+        // create the melody button
+        var button = $('<label></label>')
+            .attr('id', melody.title + "-" + melody.artist + "-" + melody.refrain)
+            .addClass('btn btn-xs btn-default selector')
+            .text(melody.refrain);
+        var buttonInput = $('<input />')
             .attr('type', 'checkbox')
-            .attr('autocomplete', 'off');
-        label.append(button).append(title);
-        buttons.append(label);
+            .attr('autocomplete', 'off')
+        button.append(buttonInput)
+        groupDiv.append(button);
+        buttons.append(groupDiv);
     });
     setListeners();
 }
 
-var filterData = function(data) {
-    data = data.filter(function(melody) {
-        if (selected.length === 0) {
-            return true
-        }
-        melodyID = melody.metadata.title + ": " + melody.metadata.artist;
-        return selected.indexOf(melodyID) !== -1;
-    })
-    return data
-}
-
 var setColors = function(data) {
     data.map(function(m) {
+        allMelodies.push(m.metadata)
         var domain = m.metadata.title + ': ' + m.metadata.artist;
         if (titleArtist.indexOf(domain) === -1) { titleArtist.push(domain) }
     })
@@ -175,6 +233,8 @@ var formatData = function(data) {
     data.map(function(m) {
         var melody = {};
         melody.metadata = m.metadata;
+        melody.metadata.refrain = Number(melody.metadata.refrain)
+        melody.metadata.id = m.metadata.fileName.split(".")[0];
         melody.notes = [];
         m.notes.map(function(n, i) {
             numNotes += 1;
@@ -349,7 +409,7 @@ var chartPitches = function() {
           .enter().append('g')
             .attr('class', 'melody')
             .attr('id', function(d) {
-                return d.metadata.title + ":" + d.metadata.artist;
+                return d.metadata.id;
             })
 
         melody.append('path')
