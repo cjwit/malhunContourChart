@@ -234,7 +234,7 @@ var formatData = function(data) {
         var melody = {};
         melody.metadata = m.metadata;
         melody.metadata.refrain = Number(melody.metadata.refrain)
-        melody.metadata.id = m.metadata.fileName.split(".")[0];
+        melody.metadata.id = m.metadata.title + "-" + m.metadata.artist + "-" + m.metadata.refrain;
         melody.notes = [];
         m.notes.map(function(n, i) {
             numNotes += 1;
