@@ -135,7 +135,7 @@ def getSimilarities(data):
     headers = "| Rank | Avg. Distance | Melody 1 | Melody 2 |\n| --- | --- | --- | --- |\n"
     outputFile = open(savePath, 'w')
     outputFile.write('# <a name = "top"></a>Similarity between malhun melodies\n')
-    outputFile.write('The two lists below measured the average distance between two melodies.\n')
+    outputFile.write('The two lists below measure the average distance between two melodies.\n')
     outputFile.write('There are ' + str(len(results)) + ' total pairs and ' + str(len(filtered)) + ' after removing pairs that are from the same song.\n\n')
     outputFile.write('See [all results](#all).\n\n')
     outputFile.write('### Filtering out melodies from the same song\n')
