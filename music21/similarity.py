@@ -103,21 +103,46 @@ def checkSimilarity(melody1, melody2):
     result['similarity'] = diffFromRoot * 1.0 / sampleSize
     return result
 
+def filterSameSong(listOfResults):
+    filtered = []
+    for result in listOfResults:
+        if result['melody1'].split("-")[0] != result['melody2'].split("-")[0]:
+            filtered.append(result)
+    return filtered
+
 def getSimilarities(data):
     print 'Beginning check for similarity'
     results = []
     for i in range(0, len(data) - 2):
         for j in range(i + 1, len(data)):
-            results.append(checkSimilarity(data[i], data[j]))
+            similarity = checkSimilarity(data[i], data[j])
+            results.append(similarity)
     results.sort(key=lambda x: x['similarity'])
+    i = 0
+    for r in results:
+        results[i]['index'] = i + 1
+        print results[i]
+        print 'index' in results[i]
+        i += 1
+    filtered = filterSameSong(results)
+    print len(filtered), len(results)
+    filteredString = ""
+    for f in filtered:
+        print 'index' in f
+        filteredString += "| " + str(f['index']) + " | " + str(f['similarity']) + " | " + f['melody1'].split('.')[0] + " | " + f['melody2'].split('.')[0] + " |\n"
     resultString = ""
     for r in results:
-        resultString += "* " + str(r['similarity']) + " average distance: " + r['melody1'].split('.')[0] + " and " + r['melody2'].split('.')[0] + "\n"
+        resultString += "| " + str(r['index']) + " | " + str(r['similarity']) + " | " + r['melody1'].split('.')[0] + " | " + r['melody2'].split('.')[0] + " |\n"
     savePath = 'contour_chart/malhun_similarity.md'
+    headers = "| Rank | Avg. Distance | Melody 1 | Melody 2 |\n| --- | --- | --- | --- |\n"
     outputFile = open(savePath, 'w')
     outputFile.write('# Similarity between malhun melodies\n')
-    outputFile.write('## Measured by average distance from the root\n')
-    outputFile.write(resultString)
+    outputFile.write('#### Measured by average distance from the root\n')
+    outputFile.write('#### Total pairs: ' + str(len(results)) + ", pairs that are not from the same melody: " + str(len(filtered)) + '\n')
+    outputFile.write('## Filtering out melodies from the same song\n')
+    outputFile.write(headers + filteredString + "\n")
+    outputFile.write('## All results\n')
+    outputFile.write(headers + resultString)
     outputFile.close()
     print 'Data saved to', savePath
 
