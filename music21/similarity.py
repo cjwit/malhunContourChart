@@ -121,14 +121,12 @@ def getSimilarities(data):
     i = 0
     for r in results:
         results[i]['index'] = i + 1
-        print results[i]
-        print 'index' in results[i]
         i += 1
+    print 'Filtering results'
     filtered = filterSameSong(results)
-    print len(filtered), len(results)
     filteredString = ""
+    print 'Preparing chart'
     for f in filtered:
-        print 'index' in f
         filteredString += "| " + str(f['index']) + " | " + str(f['similarity']) + " | " + f['melody1'].split('.')[0] + " | " + f['melody2'].split('.')[0] + " |\n"
     resultString = ""
     for r in results:
@@ -136,12 +134,13 @@ def getSimilarities(data):
     savePath = 'contour_chart/malhun_similarity.md'
     headers = "| Rank | Avg. Distance | Melody 1 | Melody 2 |\n| --- | --- | --- | --- |\n"
     outputFile = open(savePath, 'w')
-    outputFile.write('# Similarity between malhun melodies\n')
-    outputFile.write('#### Measured by average distance from the root\n')
-    outputFile.write('#### Total pairs: ' + str(len(results)) + ", pairs that are not from the same melody: " + str(len(filtered)) + '\n')
-    outputFile.write('## Filtering out melodies from the same song\n')
+    outputFile.write('# <a name = "top"></a>Similarity between malhun melodies\n')
+    outputFile.write('The two lists below measured the average distance between two melodies.\n')
+    outputFile.write('There are ' + str(len(results)) + ' total pairs and ' + str(len(filtered)) + ' after removing pairs that are from the same song.\n\n')
+    outputFile.write('See [all results](#all).\n\n')
+    outputFile.write('### Filtering out melodies from the same song\n')
     outputFile.write(headers + filteredString + "\n")
-    outputFile.write('## All results\n')
+    outputFile.write('### <a name = "all"></a>All results\n[Back to the top](#top)\n\n')
     outputFile.write(headers + resultString)
     outputFile.close()
     print 'Data saved to', savePath
