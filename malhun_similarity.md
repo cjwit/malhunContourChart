@@ -1,7 +1,10 @@
-# Similarity between malhun melodies
-#### Measured by average distance from the root
-#### Total pairs: 1952, pairs that are not from the same melody: 1780
-## Filtering out melodies from the same song
+# <a name = "top"></a>Similarity between malhun melodies
+The two lists below measured the average distance between two melodies.
+There are 1952 total pairs and 1780 after removing pairs that are from the same song.
+
+See [all results](#all).
+
+### Filtering out melodies from the same song
 | Rank | Avg. Distance | Melody 1 | Melody 2 |
 | --- | --- | --- | --- |
 | 15 | 0.601 | Shmaa-Toulali-8-Final | Zawgna fil Hmak demo-Sousi-2 |
@@ -1785,7 +1788,9 @@
 | 1951 | 3.742 | Hakim al Dhati-Sousi-4-Final | Warda-Youbi-1 |
 | 1952 | 3.757 | Hakim al Dhati-Sousi-1 | Warda-Youbi-1 |
 
-## All results
+### <a name = "all"></a>All results
+[Back to the top](#top)
+
 | Rank | Avg. Distance | Melody 1 | Melody 2 |
 | --- | --- | --- | --- |
 | 1 | 0.0 | Harraz-Ghanem-2 | Harraz-Ghanem-9 |
