@@ -1,66 +1,3 @@
-def getMalhun():
-    paths = corpus.getLocalPaths()
-    malhun = []
-    for p in paths:
-        if 'malhun' in p:
-            this = corpus.parse(p)
-            malhun.append(this)
-    return malhun
-
-# file name = title-singer-refrain-Final
-def createMetadata(fileName):
-    metadata = {}
-    metadata["fileName"] = fileName
-    splitName = fileName.split('-')
-    metadata["title"] = splitName[0]
-    metadata["artist"] = splitName[1]
-    metadata["refrain"] = splitName[2].split('.')[0]
-    if len(splitName) == 4:
-        metadata["isFinal"] = 1
-    else:
-        metadata["isFinal"] = 0
-    return metadata
-
-def fromRoot(pitchFrequency, rootFrequency, pitchCollection):
-    # return value from pitchCollection - root's value
-    rootIndex = pitchCollection.index(rootFrequency)
-    pitchIndex = pitchCollection.index(pitchFrequency)
-    return pitchIndex - rootIndex
-
-def getPitchCollection(flatScore):
-    pitches = [];
-    for n in flatScore:
-        if n.pitch.frequency not in pitches:
-            pitches.append(n.pitch.frequency)
-    pitches.sort()
-    return pitches
-
-def getNotes(recursiveScore, rootFrequency):
-    notes = []
-    pitchCollection = getPitchCollection(recursiveScore.notes)
-    transposingUp = rootFrequency < 312 # just above D# in the middle of the bass clef
-    for n in recursiveScore.notes:
-        noteEntry = {}
-        noteEntry["offset"] = float(n.getOffsetBySite(recursiveScore))
-        noteEntry["duration"] = float(n.quarterLength)
-        noteEntry["fromRoot"] = 'rest'
-        noteEntry["frequency"] = 'rest'
-        if n.isNote:
-            noteEntry["fromRoot"] = fromRoot(n.pitch.frequency, rootFrequency, pitchCollection)
-            noteEntry["frequency"] = n.pitch.frequency
-            if transposingUp:
-                noteEntry["frequency"] *= 2
-        notes.append(noteEntry)
-    return notes
-
-def createEntry(thisScore):
-    entry = {}
-    recursiveScore = thisScore.recurse()
-    entry["metadata"] = createMetadata(thisScore.metadata.title)
-    entry["root"] = recursiveScore.notes[-1].pitch.frequency
-    entry["notes"] = getNotes(recursiveScore, entry["root"])
-    return entry
-
 def formatTo100(melody, increment, sampleSize):
     scaled = []
     for n in melody['notes']:
@@ -111,21 +48,21 @@ def filterSameSong(listOfResults):
     return filtered
 
 def getSimilarities(data):
-    print 'Beginning check for similarity'
     results = []
     for i in range(0, len(data) - 2):
         for j in range(i + 1, len(data)):
             similarity = checkSimilarity(data[i], data[j])
             results.append(similarity)
+            progress = i * 1.0 / len(data) * 100
+            sys.stdout.write("  --  Checking for similarity: %d%%\r" % progress)
+            sys.stdout.flush()
     results.sort(key=lambda x: x['similarity'])
     i = 0
     for r in results:
         results[i]['index'] = i + 1
         i += 1
-    print 'Filtering results'
     filtered = filterSameSong(results)
     filteredString = ""
-    print 'Preparing chart'
     for f in filtered:
         filteredString += "| " + str(f['index']) + " | " + str(f['similarity']) + " | " + f['melody1'].split('.')[0] + " | " + f['melody2'].split('.')[0] + " |\n"
     resultString = ""
@@ -143,18 +80,10 @@ def getSimilarities(data):
     outputFile.write('### <a name = "all"></a>All results\n[Back to the top](#top)\n\n')
     outputFile.write(headers + resultString)
     outputFile.close()
-    print 'Data saved to', savePath
-
-def getData(collection):
-    data = []
-    total = len(collection)
-    for i, s in enumerate(collection):
-        data.append(createEntry(s))
-    	progress = i * 1.0 / total * 100
-        print '\r' + str(round(progress, 0)) + '%'
-    return data
+    print ' --  Data saved to', savePath
 
 from music21 import *
-import json
-data = getData(getMalhun())
+import json, sys
+with open('contour_chart/malhun.json') as data_file:
+    data = json.load(data_file)
 getSimilarities(data)
