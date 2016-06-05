@@ -68,6 +68,125 @@ var chart = d3.select('.chart')
     .attr('class', 'container')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
+var presentationStepNumber = 0;
+
+var presentationSteps = [
+    function() {
+        selected = ["Mersul-Sqalli-1", "Mersul-Sqalli-2", "Mersul-Sqalli-3", "Mersul-Sqalli-4", "Mersul-Sqalli-5", "Mersul-Sqalli-7"];
+    },
+    function() {
+        $('#updateToSteps').click();
+    },
+    function() {
+        selected = ["Damlij-Bouzouba-1", "Damlij-Bouzouba-3", "Damlij-Bouzouba-6", "Damlij-Bouzouba-7", "Damlij-Bouzouba-9", "Damlij-Toulali-1", "Damlij-Toulali-4", "Damlij-Toulali-6", "Damlij-Toulali-7", "Damlij-Toulali-8", "Ghita-Haroushi-2", "Ghita-Haroushi-10", "Gnaoui-Hussein-1", "Gnaoui-Hussein-7", "Ma Zin Wsluk-Sousi-1", "Shmaa-Haroushi-1", "Shmaa-Haroushi-4", "Shmaa-Haroushi-6", "Shmaa-Haroushi-7", "Shmaa-Haroushi-8", "Harraz-Ghanem-1", "Harraz-Ghanem-2", "Harraz-Ghanem-8", "Harraz-Ghanem-9", "Harraz-Ghanem-13", "Fatma-Aloudi-1", "Fatma-Aloudi-4", "Fatma-Aloudi-8", "Zawgna fil Hmak demo-Sousi-1", "Zawgna fil Hmak demo-Sousi-2", "Zawgna fil Hmak demo-Sousi-3", "Shmaa-Toulali-1", "Shmaa-Toulali-4", "Shmaa-Toulali-6", "Shmaa-Toulali-7", "Shmaa-Toulali-8", "Harraz-Haroushi-1", "Harraz-Haroushi-4", "Harraz-Haroushi-5", "Harraz-Haroushi-6", "Harraz-Haroushi-7", "Fatma-Asri-1", "Fatma-Asri-5", "Fatma-Asri-6", "Fatma-Toulali-1", "Ghazel-Haroushi-2", "Ghazel-Haroushi-7", "Ghazel-Haroushi-10", "Lutfiyya-Harouchi-1", "Lutfiyya-Harouchi-7", "Lutfiyya-Harouchi-8", "Warda-Binslamane-1", "Warda-Binslamane-4", "Warda-Binslamane-6", "Warda-Youbi-1", "Warda-Youbi-2", "Warda-Youbi-3", "Lutfiyya-Sousi-1", "Ghazel-Omar-1", "Ghazel-Omar-6", "Hakim al Dhati-Sousi-1", "Hakim al Dhati-Sousi-4"];
+    },
+    function() {
+        selected = ["Shmaa-Haroushi-8", "Mersul-Sqalli-4", "Ghazel-Omar-1", "Ghazel-Omar-6"];
+    },
+    function() {
+        selected = [];
+        $('#updateToPitches').click();
+    },
+    function() {
+        selected = ["Damlij-Bouzouba-1", "Damlij-Bouzouba-3", "Damlij-Bouzouba-6", "Damlij-Bouzouba-7", "Damlij-Bouzouba-9"];
+    },
+    function() {
+        selected = ["Damlij-Bouzouba-1", "Damlij-Bouzouba-3", "Damlij-Bouzouba-6", "Damlij-Bouzouba-7", "Damlij-Bouzouba-9", "Damlij-Toulali-1", "Damlij-Toulali-4", "Damlij-Toulali-6", "Damlij-Toulali-7", "Damlij-Toulali-8"];
+    },
+    function() {
+        selected = ["Fatma-Aloudi-1", "Fatma-Aloudi-4", "Fatma-Aloudi-8", "Fatma-Asri-1", "Fatma-Asri-5", "Fatma-Asri-6", "Fatma-Toulali-1"];
+    },
+    function() {
+        selected = ["Ghazel-Haroushi-2", "Ghazel-Haroushi-7", "Ghazel-Haroushi-10"];
+        displaySelected();
+        // click through using timers
+        window.setTimeout(function() {
+            selected = ["Harraz-Ghanem-1", "Harraz-Ghanem-2", "Harraz-Ghanem-8", "Harraz-Ghanem-9", "Harraz-Ghanem-13"];
+            displaySelected();
+        }, 1000)
+        window.setTimeout(function() {
+            selected = ["Harraz-Haroushi-1", "Harraz-Haroushi-4", "Harraz-Haroushi-5", "Harraz-Haroushi-6", "Harraz-Haroushi-7"];
+            displaySelected();
+        }, 2000)
+        window.setTimeout(function() {
+            selected = ["Lutfiyya-Harouchi-1", "Lutfiyya-Harouchi-7", "Lutfiyya-Harouchi-8"];
+            displaySelected();
+        }, 3000)
+        window.setTimeout(function() {
+            selected = ["Mersul-Sqalli-1", "Mersul-Sqalli-2", "Mersul-Sqalli-3", "Mersul-Sqalli-4", "Mersul-Sqalli-5", "Mersul-Sqalli-7"];
+            displaySelected();
+        }, 4000)
+        window.setTimeout(function() {
+            selected = ["Shmaa-Haroushi-1", "Shmaa-Haroushi-4", "Shmaa-Haroushi-6", "Shmaa-Haroushi-7", "Shmaa-Haroushi-8"];
+            displaySelected();
+        }, 5000)
+        window.setTimeout(function() {
+            selected = ["Shmaa-Toulali-1", "Shmaa-Toulali-4", "Shmaa-Toulali-6", "Shmaa-Toulali-7", "Shmaa-Toulali-8"];
+            displaySelected();
+        }, 6000)
+        window.setTimeout(function() {
+            selected = ["Warda-Binslamane-1", "Warda-Binslamane-4", "Warda-Binslamane-6"];
+            displaySelected();
+        }, 7000)
+        window.setTimeout(function() {
+            selected = ["Warda-Youbi-1", "Warda-Youbi-2", "Warda-Youbi-3"];
+            displaySelected();
+        }, 8000)
+        window.setTimeout(function() {
+            selected = ["Zawgna fil Hmak demo-Sousi-1", "Zawgna fil Hmak demo-Sousi-2", "Zawgna fil Hmak demo-Sousi-3"];
+            displaySelected();
+        }, 9000)
+    },
+    function() {
+        selected = ["Shmaa-Haroushi-1", "Shmaa-Haroushi-4", "Shmaa-Haroushi-6", "Shmaa-Haroushi-7", "Shmaa-Haroushi-8", "Shmaa-Toulali-1", "Shmaa-Toulali-4", "Shmaa-Toulali-6", "Shmaa-Toulali-7", "Shmaa-Toulali-8"];
+    },
+    function() {
+        selected = ["Shmaa-Haroushi-1", "Shmaa-Haroushi-4", "Shmaa-Haroushi-6", "Shmaa-Haroushi-7", "Shmaa-Haroushi-8", "Shmaa-Toulali-1", "Shmaa-Toulali-4", "Shmaa-Toulali-6", "Shmaa-Toulali-7"];
+    }
+];
+
+var reset = function() {
+    selected = [];
+    presentationStepNumber = 0;
+    displaySelected();
+};
+
+var nextStep = function() {
+    if (presentationStepNumber < presentationSteps.length) {
+        presentationSteps[presentationStepNumber]();
+        presentationStepNumber += 1
+        displaySelected();
+    } else {
+        reset();
+    }
+};
+
+var displaySelected = function() {
+    // change CSS based on selected array
+    if (selected.length === 0) {
+        $('.melody').each(function(index) {
+            $(this).css('opacity', '');
+            $(this).find('.line').css('opacity', '');
+        })
+    } else {
+        $('.melody').each(function(index) {
+            var melodyID = $(this).attr('id');
+            if (selected.indexOf(melodyID) !== -1) {
+                $(this).css('opacity','1')
+            } else {
+                $(this).css('opacity', '0.02')
+            }
+        });
+    }
+    $('.selector').each(function(){
+        if (selected.indexOf($(this).attr('id')) >= 0) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
+    })
+};
+
 var setListeners = function() {
     $('.selector').click(function(e) {
         e.preventDefault();
@@ -108,23 +227,7 @@ var setListeners = function() {
                 selected.splice(index, 1)
             }
         }
-
-        // change CSS based on selected array
-        if (selected.length === 0) {
-            $('.melody').each(function(index) {
-                $(this).css('opacity', '');
-                $(this).find('.line').css('opacity', '');
-            })
-        } else {
-            $('.melody').each(function(index) {
-                var melodyID = $(this).attr('id');
-                if (selected.indexOf(melodyID) !== -1) {
-                    $(this).css('opacity','1')
-                } else {
-                    $(this).css('opacity', '0.02')
-                }
-            });
-        }
+        displaySelected();
     });
 }
 
