@@ -1,5 +1,5 @@
 body {
-  padding: 30px; }
+  padding: 10px; }
 
 span {
   font: 12px sans-serif;
@@ -45,7 +45,7 @@ a {
     shape-rendering: crispEdges; }
 
 .melody {
-  opacity: 0.02; }
+  opacity: 0.1; }
   .melody:hover {
     opacity: 0.9; }
     .melody:hover path {
@@ -60,6 +60,11 @@ a {
 
 .btn-group {
   margin: 5px; }
+
+#presentation {
+  position: absolute;
+  top: 60px;
+  right: 20px; }
 
 #modeSelector {
   position: absolute;
