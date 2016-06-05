@@ -73,8 +73,7 @@ var toClick = [];
 var clickThrough = function(incoming) {
     var buttons = $("#buttons");
     incoming.map(function(id) {
-        id = "#" + id;
-        var thisButton = buttons.find(id)
+        var thisButton = buttons.find($("label[id='" + id + "']"));
         $(thisButton).click();
     })
 };
@@ -82,7 +81,7 @@ var clickThrough = function(incoming) {
 var presentationSteps = [
     function() {
         toClick = ["Mersul-Sqalli-1", "Mersul-Sqalli-2", "Mersul-Sqalli-3", "Mersul-Sqalli-4", "Mersul-Sqalli-5", "Mersul-Sqalli-7"];
-        clickThrough(toClick)
+        clickThrough(toClick);
     },
     function() {
         $('#updateToSteps').click();
@@ -178,12 +177,29 @@ var presentationSteps = [
         clickThrough(toClick);
         toClick = ["Shmaa-Haroushi-1", "Shmaa-Haroushi-4", "Shmaa-Haroushi-6", "Shmaa-Haroushi-7", "Shmaa-Haroushi-8", "Shmaa-Toulali-1", "Shmaa-Toulali-4", "Shmaa-Toulali-6", "Shmaa-Toulali-7"];
         clickThrough(toClick);
+    },
+    function() {
+        $('#updateToSteps').click();
+        clickThrough(toClick);
+        toClick = ["Fatma-Aloudi-8", "Fatma-Asri-6", "Ma Zin Wsluk-Sousi-1", "Shmaa-Toulali-8", "Warda-Binslamane-6", "Warda-Youbi-3"];
+        clickThrough(toClick);
+    },
+    function() {
+        clickThrough(toClick);
+        toClick = ["Zawgna fil Hmak demo-Sousi-1", "Lutfiyya-Sousi-1"];
+        clickThrough(toClick);
+    },
+    function() {
+        clickThrough(toClick);
+        toClick = ["Gnaoui-Hussein-7", "Shmaa-Haroushi-8"];
+        clickThrough(toClick);
     }
 ];
 
 var reset = function() {
     selected = [];
     presentationStepNumber = 0;
+    $('#updateToPitches').click();
     displaySelected();
 };
 
@@ -385,7 +401,7 @@ var formatData = function(data) {
         melody.notes.push(createFinalPitch(m));
         withEndPoints.push(melody)
     });
-    console.log(numNotes + ' individual notes')
+    // console.log(numNotes + ' individual notes')
     return withEndPoints;
 }
 
